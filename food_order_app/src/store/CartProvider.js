@@ -1,6 +1,12 @@
+import { useReducer } from "react";
+
 import { checkPropTypes } from "prop-types";
 import CartContext from "./cart-context";
 
+const defaultCartState = {
+  items: [],
+  totalAmount: 0,
+};
 const CartProvider = (props) => {
   const addItemToCartHandler = (item) => {};
   const removeItemFromCartHandler = (id) => {};
